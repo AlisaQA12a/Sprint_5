@@ -1,5 +1,3 @@
-from urllib.error import URLError
-
 Константы расположены в модуле 'constants'
 
 Локаторы расположены в модуле 'Locators'

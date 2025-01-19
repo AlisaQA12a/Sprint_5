@@ -17,4 +17,4 @@ class TestNavigationToPersonalAccount:
         WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located(Locators.PERS_ACCOUNT_BUTTON))
         driver.find_element(*Locators.PERS_ACCOUNT_BUTTON).click()
         WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located(Locators.SAVE_BUTTON))
-        assert driver.current_url == 'https://stellarburgers.nomoreparties.site/account/profile'
+        assert driver.current_url == Constants.URL_PROFILE

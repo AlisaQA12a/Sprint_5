@@ -25,7 +25,7 @@ class TestRegistration:
         driver.find_element(*Locators.AUTH_BUTTON).click()
         WebDriverWait(driver, 5).until(
             expected_conditions.visibility_of_element_located(Locators.PLACE_AN_ORDER_BUTTON))
-        assert driver.current_url == 'https://stellarburgers.nomoreparties.site/'
+        assert driver.current_url == Constants.URL
 
     # ошибка при некорректном пароля(5 символов)
     def test_getting_allert_when_password_contains_five_symbols(self, driver):
